@@ -38,12 +38,12 @@ function Navbar() {
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            <button className="hover:text-gray-700">
+            <button className="hover:text-gray-700 z-20">
               Internships
               <span className="ml-2">▼</span>
             </button>
             {isDropdownOpen && (
-              <ul className="absolute top-full left-0 bg-white text-black shadow-lg mt-1 rounded">
+              <ul className="absolute top-full left-0 bg-white text-black shadow-lg mt-1 rounded z-20">
                 <li>
                   <Link
                     to="/course/webdev"

@@ -19,18 +19,13 @@ const Home = () => {
   };
 
   return (
-    <div className="p-10 text-center">
-      {/* <h1 className="text-4xl font-bold mb-6">Welcome to Home Page</h1> */}
-      {/* <p className="text-gray-600">Explore internship paths and more on our platform!</p> */}
+    <div className="p-10 text-center bg-white">
       <div className="p-10 text-center relative">
-        {/* large balls - Overlay-Blur */}
         <img
           src={`public/Images/Background/Overlay+Blur.png`}
           alt="Large Photo Left"
           className="w-1/4 h-auto left-0 absolute"
         />
-
-        {/* Small balls */}
         <div className="relative">
           <img
             src={`public/Images/Background/ball-1.png`}
@@ -112,7 +107,7 @@ const Home = () => {
         <Cards className="z-10" />
 
         {/* Other Content */}
-        <div className="flex justify-center z-10">
+        <div className="flex justify-center z-10" style={{ backgroundImage: 'url("/public/Images/Background/home-bg.jpg")' }}>
           <div className="bg-violet-100 flex p-20 rounded-3xl h-2/3 w-10/12 m-28 z-10">
             <div className="overflow-hidden rounded-xl">
               <img className="w-full" src="Images/16.png" alt="img" />
