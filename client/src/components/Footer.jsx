@@ -13,7 +13,7 @@ const Footer = () => {
               placeholder="Enter Your Mail"
               className="p-3 w-80 text-sm text-gray-700 border rounded-l-lg focus:outline-none"
             />
-            <button className="bg-purple-500 text-white p-3 text-sm rounded-r-lg hover:bg-purple-600">
+            <button className="bg-indigo-600 text-white p-3 text-sm rounded-r-lg hover:bg-purple-600">
               Get Newsletter
             </button>
           </div>
@@ -64,12 +64,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Our Gallery</h3>
             <div className="grid grid-cols-3 gap-2">
-              <img src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/src/Images/bg1.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/src/Images/bg2.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/src/Images/bg3.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/src/Images/bg4.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/src/Images/bg5.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/src/Images/bg6.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
             </div>
           </div>
         </div>
