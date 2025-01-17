@@ -46,8 +46,8 @@ const AboutUs = () => {
           <div className="flex">
             <div>
               <img
-                className="rounded-full h-80 w-80 m-10 "
-                src="https://images.unsplash.com/photo-1719937206491-ed673f64be1f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8"
+                className="rounded-full h-auto w-auto m-6"
+                src="/public/Images/Group-Image-About.png"
                 alt="img"
               />
             </div>
@@ -69,6 +69,9 @@ const AboutUs = () => {
                 <div>Flexible Course Plan</div>
                 <div>Expert Mentors</div>
               </div>
+            <div>
+            <img src="/public/Images/Group-Image-2-About.png" alt="Group-Image" className="absolute right-1/4 h-2/3 w-96 " />
+            </div>
             </div>
           </div>
 
