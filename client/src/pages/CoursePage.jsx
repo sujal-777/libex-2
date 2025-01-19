@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 // import Reviews from "../components/WebDev/Reviews";
 import PropTypes from "prop-types";
 import { Box, Tabs, Tab, Typography } from "@mui/material";
-import { Check } from 'lucide-react';
+import { Check } from "lucide-react";
 import CourseCards from "../components/CourseCards";
 
 const CourseDetails = () => {
@@ -38,18 +38,20 @@ const CourseDetails = () => {
         classes: 30,
         reviews: 36,
       },
-      overview:
-      {
-        part1:"Our Web Development course is designed to transform beginners into professional developers with industry-ready skills. Covering both front-end and back-end development, the program includes modules on HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With hands-on projects, you'll build real-world applications, gaining the confidence to tackle complex web solutions.",
-        part2:"Led by industry expert instructors, the course ensures students stay updated with the latest trends and tools in web development. You'll learn best practices for responsive design, performance optimization, and secure coding standards.",
-        part3:"A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful",
-          requirements: [
-        "A Laptop or Desktop",
-        "Basic Computer Skills",
-        "Time Commitment",
-        "Willingness to Learn"
-      ],
-    }
+      overview: {
+        part1:
+          "Our Web Development course is designed to transform beginners into professional developers with industry-ready skills. Covering both front-end and back-end development, the program includes modules on HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With hands-on projects, you'll build real-world applications, gaining the confidence to tackle complex web solutions.",
+        part2:
+          "Led by industry expert instructors, the course ensures students stay updated with the latest trends and tools in web development. You'll learn best practices for responsive design, performance optimization, and secure coding standards.",
+        part3:
+          "A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful",
+        requirements: [
+          "A Laptop or Desktop",
+          "Basic Computer Skills",
+          "Time Commitment",
+          "Willingness to Learn",
+        ],
+      },
     },
     {
       id: "webdev",
@@ -77,18 +79,20 @@ const CourseDetails = () => {
         classes: 30,
         reviews: 36,
       },
-      overview:
-      {
-        part1:"Our Web Development course is designed to transform beginners into professional developers with industry-ready skills. Covering both front-end and back-end development, the program includes modules on HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With hands-on projects, you'll build real-world applications, gaining the confidence to tackle complex web solutions.",
-        part2:"Led by industry expert instructors, the course ensures students stay updated with the latest trends and tools in web development. You'll learn best practices for responsive design, performance optimization, and secure coding standards.",
-        part3:"A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful",
-          requirements: [
-        "A Laptop or Desktop",
-        "Basic Computer Skills",
-        "Time Commitment",
-        "Willingness to Learn"
-      ],
-      }
+      overview: {
+        part1:
+          "Our Web Development course is designed to transform beginners into professional developers with industry-ready skills. Covering both front-end and back-end development, the program includes modules on HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With hands-on projects, you'll build real-world applications, gaining the confidence to tackle complex web solutions.",
+        part2:
+          "Led by industry expert instructors, the course ensures students stay updated with the latest trends and tools in web development. You'll learn best practices for responsive design, performance optimization, and secure coding standards.",
+        part3:
+          "A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful",
+        requirements: [
+          "A Laptop or Desktop",
+          "Basic Computer Skills",
+          "Time Commitment",
+          "Willingness to Learn",
+        ],
+      },
     },
     {
       id: "data-science",
@@ -117,9 +121,12 @@ const CourseDetails = () => {
         reviews: 36,
       },
       overview: {
-        part1:"Our Web Development course is designed to transform beginners into professional developers with industry-ready skills. Covering both front-end and back-end development, the program includes modules on HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With hands-on projects, you'll build real-world applications, gaining the confidence to tackle complex web solutions.",
-        part2:"Led by industry expert instructors, the course ensures students stay updated with the latest trends and tools in web development. You'll learn best practices for responsive design, performance optimization, and secure coding standards.",
-        part3:"A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful",
+        part1:
+          "Our Web Development course is designed to transform beginners into professional developers with industry-ready skills. Covering both front-end and back-end development, the program includes modules on HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With hands-on projects, you'll build real-world applications, gaining the confidence to tackle complex web solutions.",
+        part2:
+          "Led by industry expert instructors, the course ensures students stay updated with the latest trends and tools in web development. You'll learn best practices for responsive design, performance optimization, and secure coding standards.",
+        part3:
+          "A foundational understanding of technology and a passion for learning are all you need to start your journey in web development. No prior coding experience is required, but familiarity with basic computer operations is helpful",
         requirements: [
           "Basic understanding of mathematics and statistics",
           "Familiarity with programming languages such as Python",
@@ -203,7 +210,7 @@ const CourseDetails = () => {
         classes: 30,
         reviews: 36,
       },
-      
+
       // requirements: [
       //   "Basic Programming Skills",
       //   "Mathematical Knowledge",
@@ -910,45 +917,47 @@ const CourseDetails = () => {
   //   ]
   // }
   //        ];
-  
-    const reviews=
-    [
-      {
-        src:"https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D", name:"Kevin Martin", Date:"March 20,2024",
-      },  
-      {
-        src:"https://images.unsplash.com/photo-1734533992947-44970e6e5010?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D", name:"Sarah Aibert", Date:"June 10,2024",
-      }
-    ]
 
-    const courseItems = [
-      {
-        title: "Introduction to JavaScript, Run JavaScript in VSCode",
-        duration: "5.00 Min",
-        completed: true
-      },
-      {
-        title: "What is variable, five things you need to declare a variable",
-        duration: "13.00 Min",
-        completed: true
-      },
-      {
-        title: "Variable type, Numeric, String, Boolean",
-        duration: "12.00 Min",
-        completed: true
-      },
-      {
-        title: "Simple Mathematical operations in JavaScript",
-        duration: "15.00 Min",
-        completed: true
-      },
-      {
-        title: "(advanced) Mathematical operation shorthand",
-        duration: "11.00 Min",
-        completed: true
-      }
-    ];
+  const reviews = [
+    {
+      src: "https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D",
+      name: "Kevin Martin",
+      Date: "March 20,2024",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1734533992947-44970e6e5010?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Sarah Aibert",
+      Date: "June 10,2024",
+    },
+  ];
 
+  const courseItems = [
+    {
+      title: "Introduction to JavaScript, Run JavaScript in VSCode",
+      duration: "5.00 Min",
+      completed: true,
+    },
+    {
+      title: "What is variable, five things you need to declare a variable",
+      duration: "13.00 Min",
+      completed: true,
+    },
+    {
+      title: "Variable type, Numeric, String, Boolean",
+      duration: "12.00 Min",
+      completed: true,
+    },
+    {
+      title: "Simple Mathematical operations in JavaScript",
+      duration: "15.00 Min",
+      completed: true,
+    },
+    {
+      title: "(advanced) Mathematical operation shorthand",
+      duration: "11.00 Min",
+      completed: true,
+    },
+  ];
 
   const { courseid } = useParams();
   const courseData = courseDataa.filter((course) => course.id === courseid)[0];
@@ -1043,7 +1052,7 @@ const CourseDetails = () => {
                 </div>
               </div>
             </div>
-{/* 
+            {/* 
             <div className="h-3/5">
               <img
                 className="rounded-lg object-cover w-5/6 h-3/5"
@@ -1053,12 +1062,12 @@ const CourseDetails = () => {
               
             </div> */}
             <div className="overflow-hidden h-3/5 w-5/6">
-          <img
-            className="rounded-lg object-cover h-full w-full"
-            src={instructor.img1}
-            alt="Course banner"
-          />
-          </div>
+              <img
+                className="rounded-lg object-cover h-full w-full"
+                src={instructor.img1}
+                alt="Course banner"
+              />
+            </div>
 
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
@@ -1083,7 +1092,7 @@ const CourseDetails = () => {
 
             {/* Overview Tab Content */}
             <CustomTabPanel value={value} index={0}>
-        {/* <Typography variant="h6">HEYY</Typography>
+              {/* <Typography variant="h6">HEYY</Typography>
         <Typography>{overview.description}</Typography>
         <Typography variant="subtitle1" sx={{ mt: 2 }}>
           Requirements:
@@ -1093,75 +1102,78 @@ const CourseDetails = () => {
             <li key={index}>{item}</li>
           ))}
         </ul> */}
-        <div>
-     <div className="font-bold text-4xl my-3 ">Course Descriptions</div>
-      {/* <div > */}
-      <Typography className="text-gray-400 text-lg">
-        Our Web Development course is designed to transform beginners into
-        professional developers with industry-ready skills. Covering both
-        front-end and back-end development, the program includes modules on
-        HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB. With
-        hands-on projects, you'll build real-world applications, gaining the
-        confidence to tackle complex web solutions.
-      </Typography>
-      <Typography className="text-gray-400 mt-4 text-lg">
-        Led by industry expert instructors, the course ensures students stay
-        updated with the latest trends and tools in web development. You'll
-        learn best practices for responsive design, performance optimization,
-        and secure coding standards.
-      </Typography>
-      {/* </div> */}
-      <div>
-        <div className="font-bold text-4xl mt-6 my-3 text-gray-800">Requirements For The Course</div>
+              <div>
+                <div className="font-bold text-4xl my-3 ">
+                  Course Descriptions
+                </div>
+                {/* <div > */}
+                <Typography className="text-gray-400 text-lg">
+                  Our Web Development course is designed to transform beginners
+                  into professional developers with industry-ready skills.
+                  Covering both front-end and back-end development, the program
+                  includes modules on HTML, CSS, JavaScript, React, Node.js, and
+                  databases like MongoDB. With hands-on projects, you'll build
+                  real-world applications, gaining the confidence to tackle
+                  complex web solutions.
+                </Typography>
+                <Typography className="text-gray-400 mt-4 text-lg">
+                  Led by industry expert instructors, the course ensures
+                  students stay updated with the latest trends and tools in web
+                  development. You'll learn best practices for responsive
+                  design, performance optimization, and secure coding standards.
+                </Typography>
+                {/* </div> */}
+                <div>
+                  <div className="font-bold text-4xl mt-6 my-3 text-gray-800">
+                    Requirements For The Course
+                  </div>
 
-        <div className="text-gray-400 text-lg ">
-          <div className="mb-4">
-          A foundational understanding of technology and a passion for learning
-          are all you need to start your journey in web development. No prior
-          coding experience is required, but familiarity with basic computer
-          operations is helpful.
-        </div>
+                  <div className="text-gray-400 text-lg ">
+                    <div className="mb-4">
+                      A foundational understanding of technology and a passion
+                      for learning are all you need to start your journey in web
+                      development. No prior coding experience is required, but
+                      familiarity with basic computer operations is helpful.
+                    </div>
 
-        <div>✔️ A Laptop or Desktop</div>
-        <div>✔️ Basic Computer Skills</div>
-        <div>✔️ Time Commitment</div>
-        <div>✔️ Willingness to Learn</div>
-        </div>
-      </div>
-    </div>
-        </CustomTabPanel>
+                    <div>✔️ A Laptop or Desktop</div>
+                    <div>✔️ Basic Computer Skills</div>
+                    <div>✔️ Time Commitment</div>
+                    <div>✔️ Willingness to Learn</div>
+                  </div>
+                </div>
+              </div>
+            </CustomTabPanel>
 
-         {/* Curriculum Tab Content */}
+            {/* Curriculum Tab Content */}
             <CustomTabPanel value={value} index={1}>
-            <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow">
-      <h1 className="text-2xl font-semibold text-purple-800 mb-6">
-        Introduction To Web Development
-      </h1>
-      
-      
-      <div className="space-y-4">
-        {courseItems.map((item, index) => (
-          <div 
-            key={index}
-            className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
-          >
-            <div className="flex items-center space-x-4">
-              
-              <span className="text-gray-700">{item.title}</span>
-            </div>
-            
-            <div className="flex items-center space-x-4">
-              <span className="text-purple-600 bg-purple-50 px-3 py-1 rounded-full text-sm">
-                {item.duration}
-              </span>
-              {item.completed && (
-                <Check className="h-6 w-6 text-purple-600" />
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+              <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow">
+                <h1 className="text-2xl font-semibold text-purple-800 mb-6">
+                  Introduction To Web Development
+                </h1>
+
+                <div className="space-y-4">
+                  {courseItems.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
+                    >
+                      <div className="flex items-center space-x-4">
+                        <span className="text-gray-700">{item.title}</span>
+                      </div>
+
+                      <div className="flex items-center space-x-4">
+                        <span className="text-purple-600 bg-purple-50 px-3 py-1 rounded-full text-sm">
+                          {item.duration}
+                        </span>
+                        {item.completed && (
+                          <Check className="h-6 w-6 text-purple-600" />
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </CustomTabPanel>
 
             {/* Reviews Tab Content */}
@@ -1183,72 +1195,83 @@ const CourseDetails = () => {
                 </li>
               </ul>
                */}
-               <div>
-    <h1 className='font-semibold text-2xl'>2 Reviews,Web Development Course</h1>
-    <div>
-      {reviews.map((r,i)=>
-      {
-        return (
-          <div className='flex w-6/7 m-5'>
-            <div> <img  className='h-20 w-24 rounded-full' src={r.src} alt="" /></div>
-            <div className='m-5'>
-              <div>{r.name}</div>
-              <div className='my-4 text-gray-400'>{r.Date}</div>
-              <div className='my-5 text-gray-400'>Libex's hands-on approachand expert instructors helped me landmy dream job in Web Development</div>
-            </div>
-            <div className='flex'><Star/> <Star/> <Star/> <Star/> <Star/></div>
-          </div>
-        )
-      })}
-    </div>
-  </div>
-            </CustomTabPanel>
-            
-           
-          </div>
-
-          <div className="border border-gray-300 rounded-lg h-fit w-96 p-4 text-xl">
-            <div className="p-4 text-center">Course Includes:</div>
-            <hr />
-            {[
-              { label: "Level", value: courseInfo.level },
-              { label: "Duration", value: courseInfo.duration },
-              { label: "Lessons", value: courseInfo.lessons },
-              { label: "Students", value: courseInfo.students },
-              { label: "Certifications", value: courseInfo.certifications },
-              { label: "Language", value: courseInfo.language },
-            ].map(({ label, value }) => (
-              <React.Fragment key={label}>
-                <div className="flex justify-between p-3">
-                  <div className="flex">
-                    <div>{label}:</div>
+              <div>
+                <h1 className="font-semibold text-2xl">
+                  2 Reviews,Web Development Course
+                </h1>
+                <div>
+                  {reviews.map((r, i) => {
+                    return (
+                      <div className="flex w-6/7 m-5">
+                      <div>
+                        {" "}
+                        <img
+                        className="h-20 w-24 rounded-full"
+                        src={r.src}
+                        alt=""
+                        />
+                      </div>
+                      <div className="m-5">
+                        <div>{r.name}</div>
+                        <div className="my-4 text-gray-400">{r.Date}</div>
+                        <div className="my-5 text-gray-400">
+                        Libex's hands-on approachand expert instructors
+                        helped me landmy dream job in Web Development
+                        </div>
+                      </div>
+                      <div className="flex">
+                        <Star /> <Star /> <Star /> <Star /> <Star />
+                      </div>
+                      </div>
+                    );
+                    })}
                   </div>
-                  <div className="text-gray-400">{value}</div>
+                  </div>
+                </CustomTabPanel>
                 </div>
+
+                <div className="border border-gray-300 rounded-lg h-fit w-96 p-4 text-xl">
+                <div className="p-4 text-center">Course Includes:</div>
                 <hr />
-              </React.Fragment>
-            ))}
+                {[
+                  { label: "Level", value: courseInfo.level },
+                  { label: "Duration", value: courseInfo.duration },
+                  { label: "Lessons", value: courseInfo.lessons },
+                  { label: "Students", value: courseInfo.students },
+                  { label: "Certifications", value: courseInfo.certifications },
+                  { label: "Language", value: courseInfo.language },
+                ].map(({ label, value }) => (
+                  <React.Fragment key={label}>
+                  <div className="flex justify-between p-3">
+                    <div className="flex">
+                    <div>{label}:</div>
+                    </div>
+                    <div className="text-gray-400">{value}</div>
+                  </div>
+                  <hr />
+                  </React.Fragment>
+                ))}
 
-            <div className="flex flex-col justify-center">
-              <div className="border border-violet-500 text-violet-500 m-5 p-3 rounded-lg text-center">
-                This Course Fee {courseInfo.price.toFixed(2)}
+                <div className="flex flex-col justify-center">
+                  <div className="border border-violet-500 text-violet-500 m-5 p-3 rounded-lg text-center">
+                  This Course Fee {courseInfo.price.toFixed(2)}
+                  </div>
+                  <div className="bg-violet-500 text-white text-center p-3 m-3 rounded-lg">
+                  <button onClick={() => window.location.href = '/payment'}>Join This Course</button>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div>Share:</div>
+                  {[1, 2, 3, 4].map((i) => (
+                  <div key={i} className="h-8 w-8 border border-violet-500" />
+                  ))}
+                </div>
+                </div>
               </div>
-              <div className="bg-violet-500 text-white text-center p-3 m-3 rounded-lg">
-                Join This Course
               </div>
-            </div>
 
-            <div className="flex items-center gap-4">
-              <div>Share:</div>
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="h-8 w-8 border border-violet-500" />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* ** */}
+              {/* ** */}
       <div className="flex justify-center mt-60">
         <div className="flex gap-3 p-5 border border-gray-200 rounded-lg w-3/5 justify-center">
           <div>
@@ -1281,7 +1304,6 @@ const CourseDetails = () => {
         </div>
       </div>
 
-      
       <div className="flex justify-center mt-44 mb-40">
         <div className="border w-2/3">
           <div className="flex justify-between">
@@ -1301,7 +1323,7 @@ const CourseDetails = () => {
             </div>
           </div>
           <div className="my-10 mx-5 w-5/6">
-            <CourseCards/>
+            <CourseCards />
           </div>
         </div>
       </div>

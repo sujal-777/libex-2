@@ -17,18 +17,17 @@ const Payment = () => {
     }
   };
 
-
   const buyFunction = async (event) => {
     event.preventDefault(); // Prevent form submission
     try {
-        const response = await axios.post('http://localhost:3000/stripe');
-        if (response.status === 200) {
-            window.location.href = response.data.url; // Redirect to Stripe page
-        }
+      const response = await axios.post('http://localhost:3000/stripe');
+      if (response.status === 200) {
+        window.location.href = response.data.url; // Redirect to Stripe page
+      }
     } catch (error) {
-        console.error('Error processing payment:', error);
+      console.error('Error processing payment:', error);
     }
-};
+  };
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
@@ -112,26 +111,24 @@ const Payment = () => {
                   <td className="space-y-4 p-4">
                     <input
                       type="text"
-                      placeholder="Card Holder Name"
+                      placeholder="User Name"
+                      className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email"
                       className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-600"
                     />
                     <input
                       type="text"
-                      placeholder="Card Number"
+                      placeholder="Mobile No"
                       className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-600"
                     />
-                    <div className="flex space-x-4">
-                      <input
-                        type="text"
-                        placeholder="CVV"
-                        className="w-1/2 border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-600"
-                      />
-                      <input
-                        type="text"
-                        placeholder="Exp. Date (MM/YY)"
-                        className="w-1/2 border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-600"
-                      />
-                    </div>
+                    <input
+                      type="text"
+                      placeholder="Course"
+                      className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-600"
+                    />
                   </td>
                 </tr>
               </tbody>
@@ -140,7 +137,7 @@ const Payment = () => {
             {/* Pricing Section */}
             <div className="bg-gray-50 border border-gray-300 rounded-lg p-4 text-center">
               <p className="text-gray-600">
-                Web Development -{" "}
+                Buy our Course -{" "}
                 <span className="text-indigo-600 font-semibold">₹15999</span>
               </p>
             </div>
