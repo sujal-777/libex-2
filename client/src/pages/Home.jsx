@@ -85,13 +85,11 @@ const Home = () => {
             alt="Ball 3"
             className="absolute bottom-1/3 left-4 w-10 h-10 opacity-40 z-0"
           />
-          <img
-            src={`/src/Images/Background/ball-1.png`}
+          <img src={`/src/Images/Background/ball-1.png`}
             alt="Ball 4"
             className="absolute top-2 left-1/3 w-12 h-12 opacity-50 z-0"
           />
-          <img
-            src="/src/Images/Background/ball-2.png"
+          <img src="/src/Images/Background/ball-2.png"
             alt="Ball 5"
             className="absolute top-1/3 right-4 w-14 h-14 opacity-60 z-0"
           />
