@@ -10,7 +10,7 @@ const AboutUs = () => {
       <div className="relative bg-gray-300 h-80 flex justify-center items-center flex-col">
         {/* Left Image */}
         <img
-          src="/public/Images/Background/Mask-Group.png" // Replace with your left-side image URL
+          src="/src/Images/Background/Mask-Group.png" // Replace with your left-side image URL
           alt="Left Prop"
           className="absolute left-8 top-1/2 transform -translate-y-1/2 h-50 w-60"
         />
@@ -23,19 +23,19 @@ const AboutUs = () => {
 
         {/* Right Image */}
         <img
-          src="/public/Images/Background/Overlay-About.png" // Replace with your right-side image URL
+          src="/src/Images/Background/Overlay-About.png" // Replace with your right-side image URL
           alt="Right Prop"
           className="absolute right-0 bottom-0 h-60"
         />
 
         {/* Decorative Lines */}
         <img
-          src="/public/Images/Background/line-About-1.png" // Replace with your left-line image URL
+          src="/src/Images/Background/line-About-1.png" // Replace with your left-line image URL
           alt="Left Line"
           className="absolute left-10 top-1/3 transform -translate-y-1/2"
         />
         <img
-          src="/public/Images/Background/line-About-2.png" // Replace with your right-line image URL
+          src="/src/Images/Background/line-About-2.png" // Replace with your right-line image URL
           alt="Right Line"
           className="absolute right-10 top-2/3 transform -translate-y-1/2"
         />
@@ -47,7 +47,7 @@ const AboutUs = () => {
             <div>
               <img
                 className="rounded-full h-auto w-auto m-6"
-                src="/public/Images/Group-Image-About.png"
+                src="/src/Images/Group-Image-About.png"
                 alt="img"
               />
             </div>
@@ -70,7 +70,7 @@ const AboutUs = () => {
                 <div>Expert Mentors</div>
               </div>
             <div>
-            <img src="/public/Images/Group-Image-2-About.png" alt="Group-Image" className="absolute right-1/4 h-2/3 w-96 " />
+            <img src="/src/Images/Group-Image-2-About.png" alt="Group-Image" className="absolute right-1/4 h-2/3 w-96 " />
             </div>
             </div>
           </div>
@@ -128,12 +128,12 @@ const AboutUs = () => {
                     </div>
                     <div className="absolute">
                       <img
-                        src="/public/Images/Background/Mask-Group-2.png" // Replace with your left-side image URL
+                        src="/src/Images/Background/Mask-Group-2.png" // Replace with your left-side image URL
                         alt="Left Prop"
                         className="absolute left-0 top-1/2 transform -translate-y-1/2 h-80 w-70 z-10"
                       />
                       <img
-                        src="/public/Images/Background/Overlay+Blur-Purple.png" // Replace with your right-side image URL
+                        src="/src/Images/Background/Overlay+Blur-Purple.png" // Replace with your right-side image URL
                         alt="Right Prop"
                         className="absolute right-0 top-1/2 h-auto w-auto z-10"
                       />

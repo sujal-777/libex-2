@@ -37,7 +37,7 @@ const Payment = () => {
         <div className="lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0">
           <div className="bg-gray-100 rounded-lg shadow-md p-4 flex justify-center items-center">
             <img
-              src="/public/Images/Payment.png"
+              src="/src/Images/Payment.png"
               alt="Payment Illustration"
               className="max-w-full max-h-full"
               style={{ width: "686px", height: "851px" }}
@@ -66,7 +66,7 @@ const Payment = () => {
                         className="form-radio text-indigo-600 w-6 h-6"
                       />
                       <img
-                        src="/public/Images/logos_google-pay.png"
+                        src="/src/Images/logos_google-pay.png"
                         alt="GPay"
                         className="h-12"
                       />
@@ -79,7 +79,7 @@ const Payment = () => {
                         className="form-radio text-indigo-600 w-6 h-6"
                       />
                       <img
-                        src="/public/Images/simple-icons_paytm.png"
+                        src="/src/Images/simple-icons_paytm.png"
                         alt="Paytm"
                         className="h-12"
                       />
@@ -92,7 +92,7 @@ const Payment = () => {
                         className="form-radio text-indigo-600 w-6 h-6"
                       />
                       <img
-                        src="/public/Images/simple-icons_phonepe.png"
+                        src="/src/Images/simple-icons_phonepe.png"
                         alt="PhonePe"
                         className="h-12"
                       />

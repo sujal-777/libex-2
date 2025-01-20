@@ -7,7 +7,7 @@ function Testimonials() {
     <div
       className="relative flex flex-col justify-center items-center mt-36 bg-red-100 p-20"
       style={{
-        backgroundImage: `url('/public/Images/bg-line.png')`, // Add the background image
+        backgroundImage: `url('/src/Images/bg-line.png')`, // Add the background image
         backgroundSize: 'cover', // Ensure it covers the entire container
         backgroundPosition: 'center', // Center the image
         backgroundRepeat: 'no-repeat', // Prevent repeating
@@ -15,7 +15,7 @@ function Testimonials() {
     >
       {/* Top-right image */}
       <img
-        src="/public/Images/Background/about-shape-2.png"
+        src="/src/Images/Background/about-shape-2.png"
         alt="shape"
         className="absolute top-8 right-8 w-16 h-auto" // Positioning and size adjustment
       />
@@ -25,7 +25,7 @@ function Testimonials() {
         People <span className="text-cyan-400">Say About</span> Eduhive
       </div>
       <img
-        src="/public/Images/Background/line-About-3.png"
+        src="/src/Images/Background/line-About-3.png"
         alt="line"
         className="relative w-auto h-8"
       />

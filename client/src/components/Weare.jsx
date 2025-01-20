@@ -62,7 +62,7 @@ function Weare() {
           <div>
             <div className="text-3xl mb-2 text-start font-bold ">
               We Offer The <span className="text-cyan-500">Best Career</span>
-              <img src="/public/Images/Background/line-About-3.png" alt="orange-line" className="relative left-1/3 z-0 w-auto h-4 " />
+              <img src="/src/Images/Background/line-About-3.png" alt="orange-line" className="relative left-1/3 z-0 w-auto h-4 " />
             </div>
             <hr className="mb-4" />
             <div className="w-full">
@@ -90,7 +90,7 @@ function Weare() {
                 </div>
                 
                   <img
-                    src="/public/Images/Background/Mask-Group.png" // Replace with your left-side image URL
+                    src="/src/Images/Background/Mask-Group.png" // Replace with your left-side image URL
                     alt="Left Prop"
                     className="absolute left-44 transform -translate-y-1/2 h-80 w-96 z-0"
                   />
@@ -122,12 +122,12 @@ function Weare() {
               <hr className="mb-4" />
             </div>
           </div>
-                  <img src="/public/Images/Background/about-shape-2.png" className="left-1/4 relative h-auto w-auto z-10" />
+                  <img src="/src/Images/Background/about-shape-2.png" className="left-1/4 relative h-auto w-auto z-10" />
         </div>
       </div>
       <div>
 
-      <img src="/public/Images/Background/blog-shape-3-1.png.png" alt="star-img" className=" top-1/2 right-0 h-32 w-32 relative z-0" />
+      <img src="/src/Images/Background/blog-shape-3-1.png.png" alt="star-img" className=" top-1/2 right-0 h-32 w-32 relative z-0" />
       </div>
     </div>
   );

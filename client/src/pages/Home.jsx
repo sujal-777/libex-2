@@ -22,23 +22,23 @@ const Home = () => {
     <div className="p-10 text-center bg-white">
       <div className="p-10 text-center relative">
         <img
-          src={`public/Images/Background/Overlay+Blur.png`}
+          src={`/src/Images/Background/Overlay+Blur.png`}
           alt="Large Photo Left"
           className="w-1/4 h-auto left-0 absolute"
         />
         <div className="relative">
           <img
-            src={`public/Images/Background/ball-1.png`}
+            src={`/src/Images/Background/ball-1.png`}
             alt="Ball 1"
             className="absolute top-8 left-10 w-12 h-12 opacity-60 z-0"
           />
           <img
-            src={`public/Images/Background/ball-2.png`}
+            src={`/src/Images/Background/ball-2.png`}
             alt="Ball 2"
             className="absolute top-1/3 right-20 w-16 h-16 opacity-50 z-0"
           />
           <img
-            src={`public/Images/Background/ball-3.png`}
+            src={`/src/Images/Background/ball-3.png`}
             alt="Ball 2"
             className="absolute top-40 right-1/3 w-6 h-6 opacity-50 z-0"
           />
@@ -56,7 +56,7 @@ const Home = () => {
             Find Course
           </button>
           <img
-            src={`public/Images/Group 1.png`}
+            src={`/src/Images/Group 1.png`}
             alt="GroupImage"
             className=" object-contain"
           />
@@ -64,12 +64,12 @@ const Home = () => {
 
         <div className="relative">
           <img
-            src={`public/Images/Background/ball-2.png`}
+            src={`/src/Images/Background/ball-2.png`}
             alt="Ball 4"
             className="absolute bottom-2 right-1/3 w-6 h-6 opacity-50 z-0"
           />
           <img
-            src={`public/Images/Background/ball-3.png`}
+            src={`/src/Images/Background/ball-3.png`}
             alt="Ball 4"
             className="absolute bottom-2 left-1/3 w-6 h-6 opacity-50 z-0"
           />
@@ -81,17 +81,17 @@ const Home = () => {
 
         <div className="relative">
           <img
-            src="/public/Images/Background/ball-3.png"
+            src="/src/Images/Background/ball-3.png"
             alt="Ball 3"
             className="absolute bottom-1/3 left-4 w-10 h-10 opacity-40 z-0"
           />
           <img
-            src={`public/Images/Background/ball-1.png`}
+            src={`/src/Images/Background/ball-1.png`}
             alt="Ball 4"
             className="absolute top-2 left-1/3 w-12 h-12 opacity-50 z-0"
           />
           <img
-            src="/public/Images/Background/ball-2.png"
+            src="/src/Images/Background/ball-2.png"
             alt="Ball 5"
             className="absolute top-1/3 right-4 w-14 h-14 opacity-60 z-0"
           />
@@ -99,7 +99,7 @@ const Home = () => {
 
         {/* large ball - Overlay-Orange */}
         <img
-          src={`public/Images/Background/Overlay+Blur-Orange.png`}
+          src={`/src/Images/Background/Overlay+Blur-Orange.png`}
           alt="Large Photo Left"
           className="w-1/4 h-auto right-0 absolute "
         />
@@ -107,7 +107,7 @@ const Home = () => {
         <Cards className="z-10" />
 
         {/* Other Content */}
-        <div className="flex justify-center z-10" style={{ backgroundImage: 'url("/public/Images/Background/home-bg.jpg")' }}>
+        <div className="flex justify-center z-10" style={{ backgroundImage: 'url("/src/Images/Background/home-bg.jpg")' }}>
           <div className="bg-violet-100 flex p-20 rounded-3xl h-2/3 w-10/12 m-28 z-10">
             <div className="overflow-hidden rounded-xl">
               <img className="w-full" src="Images/16.png" alt="img" />
