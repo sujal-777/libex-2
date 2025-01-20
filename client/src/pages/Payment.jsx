@@ -20,7 +20,7 @@ const Payment = () => {
   const buyFunction = async (event) => {
     event.preventDefault(); // Prevent form submission
     try {
-      const response = await axios.post('http://localhost:3000/stripe');
+      const response = await axios.post('https://backend-libex.vercel.app/');
       if (response.status === 200) {
         window.location.href = response.data.url; // Redirect to Stripe page
       }
