@@ -11,12 +11,17 @@ const val=[
 
 function TestiCards() {
   return (
-    <div className='flex justify-center gap-24 mt-20'>
-        {val.map((val)=>(
-            <TestiCard name={val.name} proff={val.proff} description={val.description} />
-        ))}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-20 px-4">
+      {val.map((testimonial, idx) => (
+        <TestiCard
+          key={idx}
+          name={testimonial.name}
+          proff={testimonial.proff}
+          description={testimonial.description}
+        />
+      ))}
     </div>
-  )
+  );
 }
 
-export default TestiCards
+export default TestiCards;
