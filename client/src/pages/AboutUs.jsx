@@ -108,7 +108,7 @@ const AboutUs = () => {
 
           <div className="bg-blue-100 w-auto h-auto z-0">
             <div className="mt-40 flex justify-center w-full">
-              <img className="max-w-fit" src="src/img1.png" alt="" />
+              <img className="max-w-fit" src="/Images/img1.png" alt="" />
             </div>
 
             <div>
