@@ -3,10 +3,9 @@ require('dotenv').config();
 const cors = require('cors');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
-
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: process.env.FRONTEND_URL })); // Update this to your production frontend URL
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -21,7 +20,7 @@ app.post('/stripe', async (req, res) => {
 
         const price = await stripe.prices.create({
             product: product.id,
-            unit_amount: 15900 * 100, // 100 INR
+            unit_amount: 15999 * 100, // Convert INR to smallest currency unit (paise)
             currency: 'inr',
         });
 
@@ -30,12 +29,11 @@ app.post('/stripe', async (req, res) => {
                 {
                     price: price.id,
                     quantity: 1,
-                }
+                },
             ],
             mode: 'payment',
-            success_url: 'http://localhost:5173/success',
-            cancel_url: 'http://localhost:5173/cancel',
-            customer_email: 'demo@gmail.com',
+            success_url: `${process.env.FRONTEND_URL}/success`,
+            cancel_url: `${process.env.FRONTEND_URL}/cancel`,
         });
 
         res.json({ url: session.url });
@@ -45,6 +43,7 @@ app.post('/stripe', async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log('Server running on port 3000');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
