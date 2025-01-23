@@ -16,7 +16,7 @@ function CourseCards() {
       
 
       {/* Existing content */}
-      <div className="flex flex-wrap w-auto gap-16 justify-center z-10">
+      <div className="flex flex-wrap  gap-16 justify-center z-10">
         {val.map((val) => (
           <CourseCard
             weeks={val.weeks}

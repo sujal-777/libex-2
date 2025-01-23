@@ -215,3 +215,92 @@ form {
   border-radius: 10px; /* Rounded corners for the image */
 }
 
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .contact-container {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .form-container {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .image-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .parabola-shape {
+    width: 150px; /* Adjust size for smaller screens */
+    height: 80px;
+  }
+}
+
+/* Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .main-container {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .contact-container {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .form-container {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .submit-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .image-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .parabola-shape {
+    width: 120px; /* Adjust size for very small screens */
+    height: 70px;
+  }
+}

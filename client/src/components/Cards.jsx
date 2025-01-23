@@ -15,19 +15,18 @@ const cardData = [
 ];
 
 function Cards() {
-  return (  
-    <div className='flex justify-center'>
-          <div className="grid grid-cols-4  gap-6 w-3/4 p-1 mt-36">
-      {cardData .map((card, idx) => (
-        <Card key={idx} name={card.name} clr={card.clr} bclr={card.bclr} />
-      ))}
-    </div>
+  return (
+    <div className="flex justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full md:w-3/4 p-4 mt-20">
+        {cardData.map((card, idx) => (
+          <Card key={idx} name={card.name} clr={card.clr} bclr={card.bclr} />
+        ))}
+      </div>
     </div>
   );
 }
 
 export default Cards;
-
 
 
 // function Cards() {
