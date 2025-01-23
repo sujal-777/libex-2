@@ -5,7 +5,7 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 const app = express();
 
-app.use(cors({ origin: process.env.FRONTEND_URL })); // Update this to your production frontend URL
+app.use(cors()); // Update this to your production frontend URL
 app.use(express.json());
 
 app.get('/', (req, res) => {
