@@ -76,7 +76,7 @@
 
 
 import React from "react";
-import blogImage from "../Images/Blogsection.png"; // Replace with the correct path to your image
+import blogImage from "../../public/Images/Blogsection.png"; // Replace with the correct path to your image
 
 const Blog = () => {
   return (

@@ -193,12 +193,12 @@ const Home = () => {
   <div className="relative">
     {/* Background Image */}
     <img
-          src={`/src/Images/Background/Overlay+Blur.png`}
+          src={`/Images/Overlay+Blur.png`}
           alt="Large Photo Left"
           className="w-1/4 h-auto left-0 absolute"
         />
     <img
-      src={`/src/Images/Background/Overlay+Blur.png`}
+      src={`/Images/Overlay+Blur.png`}
       alt="Large Photo Left"
       className="absolute left-0 w-16 h-auto sm:w-1/4"
     />
@@ -206,12 +206,12 @@ const Home = () => {
     {/* Decorative Balls */}
     <div className="relative">
       <img
-        src={`/src/Images/Background/ball-1.png`}
+        src={`/Images/ball-1.png`}
         alt="Ball 1"
         className="absolute top-4 left-5 w-6 h-6 sm:w-12 sm:h-12 opacity-60 z-0"
       />
       <img
-        src={`/src/Images/Background/ball-2.png`}
+        src={`/Images/ball-2.png`}
         alt="Ball 2"
         className="absolute top-20 right-10 w-8 h-8 sm:w-16 sm:h-16 opacity-50 z-0"
       />
@@ -231,7 +231,7 @@ const Home = () => {
         Find Course
       </button>
       <img
-        src={`/src/Images/Group 1.png`}
+        src={`/Images/Group 1.png`}
         alt="Group Image"
         className="w-1/2 sm:w-auto object-contain"
       />
@@ -240,12 +240,12 @@ const Home = () => {
       {/* Background balls (top and bottom) */}
       <div className="relative">
         <img
-          src="/src/Images/Background/ball-2.png"
+          src="/Images/ball-2.png"
           alt="Ball 4"
           className="absolute bottom-2 right-1/3 w-6 h-6 opacity-50 z-0"
         />
         <img
-          src="/src/Images/Background/ball-3.png"
+          src="/Images/ball-3.png"
           alt="Ball 5"
           className="absolute bottom-2 left-1/3 w-6 h-6 opacity-50 z-0"
         />
@@ -257,17 +257,17 @@ const Home = () => {
       {/* Additional Decorative Elements */}
       <div className="relative">
         <img
-          src="/src/Images/Background/ball-3.png"
+          src="/Images/ball-3.png"
           alt="Ball 3"
           className="absolute bottom-1/3 left-4 w-10 h-10 opacity-40 z-0"
         />
         <img
-          src="/src/Images/Background/ball-1.png"
+          src="/Images/ball-1.png"
           alt="Ball 4"
           className="absolute top-2 left-1/3 w-12 h-12 opacity-50 z-0"
         />
         <img
-          src="/src/Images/Background/ball-2.png"
+          src="/Images/ball-2.png"
           alt="Ball 5"
           className="absolute top-1/3 right-4 w-14 h-14 opacity-60 z-0"
         />
@@ -275,7 +275,7 @@ const Home = () => {
 
       {/* Large Overlay Ball */}
       <img
-        src="/src/Images/Background/Overlay+Blur-Orange.png"
+        src="/Images/Overlay+Blur-Orange.png"
         alt="Large Photo Left"
         className="w-1/4 h-auto right-0 absolute"
       />
@@ -287,7 +287,7 @@ const Home = () => {
     {/* About Us Section */}
     <div className="flex flex-col lg:flex-row justify-center items-center bg-violet-100 p-6 sm:p-12 rounded-3xl mt-16 lg:space-x-10">
       <div className="w-full lg:w-1/2">
-        <img className="w-full rounded-xl" src="Images/16.png" alt="About us" />
+        <img className="w-full rounded-xl" src="/Images/16.png" alt="About us" />
       </div>
       <div className="w-full lg:w-1/2 mt-6 lg:mt-0 text-left">
         <h2 className="text-orange-500 text-xl sm:text-3xl">About Us</h2>

@@ -21,7 +21,7 @@ const ContactPage = () => {
         {/* Main Content */}
      <main>
          <div className="image-container">
-             <img src="/src/Images/image1.png" alt="Contact Us" />
+             <img src="/Images/image1.png" alt="Contact Us" />
         </div>
      </main>
 
@@ -60,7 +60,7 @@ const ContactPage = () => {
 
         <div className="form-image">
           <img
-            src="/src/assets/image.png"
+            src="/Images/image.png"
             alt="Group of students"
             className="parabola-shape"
           />

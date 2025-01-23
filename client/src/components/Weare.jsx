@@ -51,7 +51,7 @@ function Weare() {
         <div className=" flex items-center w-2/3 h-full  ">
           <img
             className="overflow-hidden h-full w-full rounded-full "
-            src="Images/16.png"
+            src="/Images/16.png"
             alt="Course"
           />
         </div>
@@ -62,14 +62,14 @@ function Weare() {
           <div>
             <div className="text-3xl mb-2 text-start font-bold ">
               We Offer The <span className="text-cyan-500">Best Career</span>
-              <img src="/src/Images/Background/line-About-3.png" alt="orange-line" className="relative left-1/3 z-0 w-auto h-4 " />
+              <img src="/Images/line-About-3.png" alt="orange-line" className="relative left-1/3 z-0 w-auto h-4 " />
             </div>
             <hr className="mb-4" />
             <div className="w-full">
               <div className="flex m-4">
                 {/* <div className='bg-orange-500 p-10'> */}
                 <div className="bg-orange-100 rounded-full h-16  p-3  w-20 flex items-center justify-center">
-                  <img src="l1.png" alt="" />
+                  <img src="/Images/l1.png" alt="" />
                 </div>
                 {/* </div> */}
                 <div className="ml-4 text-start">
@@ -86,11 +86,11 @@ function Weare() {
               <hr className="mb-4 text-start" />
               <div className="flex m-4">
                 <div className="bg-cyan-100 rounded-full h-16 p-3 w-20 flex items-center justify-center">
-                  <img src="l2.png" alt="" />
+                  <img src="/Images/l2.png" alt="" />
                 </div>
                 
                   <img
-                    src="/src/Images/Background/Mask-Group.png" // Replace with your left-side image URL
+                    src="/Images/Mask-Group.png" // Replace with your left-side image URL
                     alt="Left Prop"
                     className="absolute left-44 transform -translate-y-1/2 h-80 w-96 z-0"
                   />
@@ -122,12 +122,12 @@ function Weare() {
               <hr className="mb-4" />
             </div>
           </div>
-                  <img src="/src/Images/Background/about-shape-2.png" className="left-1/4 relative h-auto w-auto z-10" />
+                  <img src="/Images/about-shape-2.png" className="left-1/4 relative h-auto w-auto z-10" />
         </div>
       </div>
       <div>
 
-      <img src="/src/Images/Background/blog-shape-3-1.png.png" alt="star-img" className=" top-1/2 right-0 h-32 w-32 relative z-0" />
+      <img src="/Images/blog-shape-3-1.png.png" alt="star-img" className=" top-1/2 right-0 h-32 w-32 relative z-0" />
       </div>
     </div>
   );

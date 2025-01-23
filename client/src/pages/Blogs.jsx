@@ -19,18 +19,18 @@ const BlogPage = () => {
         {/* Main Blog Section */}
         <div className="blog-post">
           <img
-            src="/src/Images/image2.png"
+            src="/Images/image2.png"
             alt="Blog Post"
             className="blog-main-image"
           />
           <div className="blog-sub-images">
             <img
-              src="/src/Images/image4.png"
+              src="/Images/image4.png"
               alt="Sub Image 1"
               className="sub-image"
             />
             <img
-              src="/src/images/image3.png"
+              src="/images/image3.png"
               alt="Sub Image 2"
               className="sub-image"
             />
@@ -71,7 +71,7 @@ const BlogPage = () => {
     <h3>Latest Posts</h3>
     <ul>
       
-        <img src="/src/Images/image7.png" alt="Post 1" />
+        <img src="/Images/image7.png" alt="Post 1" />
         {/* <div>
           <p>By Admin</p>
           <h4>Top 5 UI Design Tips</h4>
@@ -122,7 +122,7 @@ const BlogPage = () => {
   <h3>02 Comments</h3>
   <div className="comment">
     <img
-      src="/src/images/image6.png"
+      src="/Images/image6.png"
       alt="Alfonso Culhane"
       className="comment-avatar"
     />
@@ -136,7 +136,7 @@ const BlogPage = () => {
   </div>
   <div className="comment">
     <img
-      src="/src/Images/image5.png"
+      src="/Images/image5.png"
       alt="Allison Curtis"
       className="comment-avatar"
     />

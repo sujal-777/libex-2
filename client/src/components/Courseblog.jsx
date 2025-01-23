@@ -18,7 +18,7 @@ function Courseblog() {
             <div>By Admin</div>
         </div>
         <div className='flex'>
-            <div><img className='h-8 w-12' src="public/Images/tag.png" alt="" /></div>
+            <div><img className='h-8 w-12' src="/Images/tag.png" alt="" /></div>
             <div>2 Comments</div>
         </div>
         

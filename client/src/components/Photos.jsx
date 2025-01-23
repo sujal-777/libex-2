@@ -26,10 +26,10 @@ import Photo from './Photo';
 
 function Photos() {
   const photoList = [
-    { src: "Images/home1.jpeg", alt: "A scenic view of home 1" },
-    { src: "Images/home2.jpeg", alt: "A scenic view of home 2" },
-    { src: "Images/home3.jpeg", alt: "A scenic view of home 3" },
-    { src: "Images/home11.jpeg", alt: "A scenic view of home 4" },
+    { src: "/Images/home1.jpeg", alt: "A scenic view of home 1" },
+    { src: "/Images/home2.jpeg", alt: "A scenic view of home 2" },
+    { src: "/Images/home3.jpeg", alt: "A scenic view of home 3" },
+    { src: "/Images/home11.jpeg", alt: "A scenic view of home 4" },
   ];
 
   return (
