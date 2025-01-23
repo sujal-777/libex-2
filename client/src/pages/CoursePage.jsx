@@ -418,13 +418,13 @@ const CourseDetails = () => {
         </div>
         <div className="text-2xl font-semibold mt-2">{title}</div>
       </div>
-  
+
       {/* Main Section */}
       <div className="flex flex-col lg:flex-row justify-between mt-10 gap-8">
         {/* Left Section */}
         <div className="lg:w-3/4">
           <div className="text-3xl font-bold mb-5">{title}</div>
-  
+
           <div className="flex flex-wrap items-center gap-4 text-lg mb-5">
             <div className="flex items-center gap-2">
               <img
@@ -440,28 +440,26 @@ const CourseDetails = () => {
               {courseInfo.reviews} Reviews)
             </div>
           </div>
-  
+
           <img
             src={instructor.img1}
             alt="Course Banner"
             className="rounded-lg w-full object-cover mb-5"
           />
-  
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            aria-label="Course Tabs"
-          >
+
+          <Tabs value={value} onChange={handleChange} aria-label="Course Tabs">
             <Tab label="Overview" />
             <Tab label="Curriculum" />
             <Tab label="Reviews" />
           </Tabs>
-  
+
           <CustomTabPanel value={value} index={0}>
             <Typography>{courseData.overview.part1}</Typography>
             <Typography>{courseData.overview.part2}</Typography>
             <div>
-              <div className="font-bold text-4xl mt-6 my-3 text-gray-800">Requirements For The Course</div>
+              <div className="font-bold text-4xl mt-6 my-3 text-gray-800">
+                Requirements For The Course
+              </div>
               <div className="text-gray-400 text-lg">
                 <div className="mb-4">{courseData.overview.part3}</div>
                 {courseData.overview.requirements.map((req, index) => (
@@ -470,7 +468,7 @@ const CourseDetails = () => {
               </div>
             </div>
           </CustomTabPanel>
-  
+
           <CustomTabPanel value={value} index={1}>
             <div className="space-y-4">
               {courseItems.map((item, index) => (
@@ -489,10 +487,12 @@ const CourseDetails = () => {
               ))}
             </div>
           </CustomTabPanel>
-  
+
           <CustomTabPanel value={value} index={2}>
             <div>
-              <h1 className="font-semibold text-2xl mb-4">{reviews.length} Reviews</h1>
+              <h1 className="font-semibold text-2xl mb-4">
+                {reviews.length} Reviews
+              </h1>
               {reviews.map((r, i) => (
                 <div key={i} className="flex gap-4 mb-5">
                   <img
@@ -515,7 +515,7 @@ const CourseDetails = () => {
             </div>
           </CustomTabPanel>
         </div>
-  
+
         {/* Right Section */}
         <div className="lg:w-1/4 border border-gray-200 p-5 rounded-lg">
           <div className="text-center font-bold mb-5">Course Includes:</div>
@@ -525,12 +525,15 @@ const CourseDetails = () => {
               <span>{value}</span>
             </div>
           ))}
-          <button className="bg-blue-500 text-white w-full py-3 mt-5 rounded-lg">
+          <button
+            className="bg-blue-500 text-white w-full py-3 mt-5 rounded-lg"
+            onClick={() => (window.location.href = "/payment")}
+          >
             Enroll Now - ₹{courseInfo.price.toFixed(2)}
           </button>
         </div>
       </div>
-  
+
       {/* Instructor Section */}
       <div className="flex justify-center mt-20 gap-6">
         <div className="flex w-full lg:w-3/4 gap-6 p-6 border border-gray-200 rounded-lg">
@@ -547,13 +550,14 @@ const CourseDetails = () => {
               <div>Experience: {instructor.experience}</div>
               <div>{instructor.students} Students</div>
               <div className="flex items-center gap-1">
-                <Star className="text-yellow-400" /> {instructor.rating} ({instructor.reviews} Reviews)
+                <Star className="text-yellow-400" /> {instructor.rating} (
+                {instructor.reviews} Reviews)
               </div>
             </div>
           </div>
         </div>
       </div>
-  
+
       {/* Footer Section */}
       <div className="flex flex-col items-center mt-20 gap-6">
         <div className="text-orange-500 font-bold">OUR COURSES</div>
@@ -564,8 +568,6 @@ const CourseDetails = () => {
       </div>
     </div>
   );
-  
-  
 };
 
 export default CourseDetails;
