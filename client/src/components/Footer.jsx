@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-blue-50 to-blue-100 py-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-       
+        {/* Newsletter Section */}
         <div className="text-center mb-8">
           <h2 className="text-lg font-semibold text-gray-700">Enter Your Mail</h2>
           <div className="mt-4 flex justify-center">
@@ -18,9 +18,10 @@ const Footer = () => {
             </button>
           </div>
         </div>
-     
+
+        {/* Links Section */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-700">
-    
+          {/* About Us */}
           <div>
             <h3 className="text-lg font-semibold mb-4">About Us</h3>
             <p className="text-sm">
@@ -40,7 +41,34 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          {/* Responsive Quick Links and Courses */}
+          <div className="block md:hidden flex justify-between gap-4">
+            {/* Courses */}
+            <div className="w-1/2">
+              <h3 className="text-lg font-semibold mb-4">Courses</h3>
+              <ul className="space-y-2 text-sm">
+                <li>» Web Development</li>
+                <li>» Artificial Intelligence</li>
+                <li>» Machine Learning</li>
+                <li>» UI/UX Design</li>
+                <li>» Data Science</li>
+              </ul>
+            </div>
+
+            {/* Quick Links */}
+            <div className="w-1/2">
+              <h3 className="text-lg font-semibold mb-4">Quick Link</h3>
+              <ul className="space-y-2 text-sm">
+                <li>» About</li>
+                <li>» Our Courses</li>
+                <li>» Instructors</li>
+                <li>» Contact Us</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Desktop View */}
+          <div className="hidden md:block">
             <h3 className="text-lg font-semibold mb-4">Quick Link</h3>
             <ul className="space-y-2 text-sm">
               <li>» About</li>
@@ -49,8 +77,8 @@ const Footer = () => {
               <li>» Contact Us</li>
             </ul>
           </div>
-     
-          <div>
+
+          <div className="hidden md:block">
             <h3 className="text-lg font-semibold mb-4">Courses</h3>
             <ul className="space-y-2 text-sm">
               <li>» Web Development</li>
@@ -60,19 +88,21 @@ const Footer = () => {
               <li>» Data Science</li>
             </ul>
           </div>
-    
+
+          {/* Gallery */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Our Gallery</h3>
             <div className="grid grid-cols-3 gap-2">
               <img src="/Images/bg1.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="/Images/bg2.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="/Images/bg3.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="/Images/bg4.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="/Images/bg5.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="/Images/bg6.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/Images/bg2.png" alt="Gallery 2" className="rounded-md h-16 w-16" />
+              <img src="/Images/bg3.png" alt="Gallery 3" className="rounded-md h-16 w-16" />
+              <img src="/Images/bg4.png" alt="Gallery 4" className="rounded-md h-16 w-16" />
+              <img src="/Images/bg5.png" alt="Gallery 5" className="rounded-md h-16 w-16" />
+              <img src="/Images/bg6.png" alt="Gallery 6" className="rounded-md h-16 w-16" />
             </div>
           </div>
         </div>
+
         {/* Copyright Section */}
         <div className="mt-10 text-center text-sm text-gray-600">
           &copy; Copyright 2024 by GBJ buzz
@@ -82,4 +112,4 @@ const Footer = () => {
   );
 };
 
-export default Footer ;
+export default Footer;
