@@ -1,35 +1,44 @@
-
 import React, { useState } from "react";
-import { Link,useNavigate } from "react-router-dom";
-
-
+import { Link, useNavigate } from "react-router-dom";
+import "./Navbar.css";
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  // const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false); // For mobile menu toggle
   const navigate = useNavigate();
-  const handlenav = () => {
-    navigate('/login');
-  };
-  const handlenav1 = () => {
-    navigate('/signup');
-  };
+
+  const handleNav = () => navigate("/login");
+  const handleNav1 = () => navigate("/signup");
 
   return (
-    <nav className=" px-4 py-3 shadow-md">
-      <div className="container mx-auto flex justify-around items-center">
-        <Link to="/" className="text-2xl font-bold">
+    <nav className="bg-white px-4 py-3 shadow-md sticky top-0 z-50">
+      <div className="container mx-auto flex justify-between items-center">
+        {/* Logo */}
+        <Link to="/" className="text-2xl font-bold text-purple-600">
           Logo
         </Link>
-        <ul className="flex space-x-6 items-center">
+
+        {/* Menu Icon for Mobile */}
+        <button
+          className="menu-icon md:hidden text-2xl focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? "✖" : "☰"}
+        </button>
+
+        {/* Navigation Links */}
+        <ul
+          className={`md:flex md:space-x-6 md:items-center absolute md:static top-[70px] left-0 w-full bg-white md:bg-transparent shadow-md md:shadow-none transition-all duration-300 ${
+            menuOpen ? "block" : "hidden"
+          }`}
+        >
           <li>
-            <Link to="/" className="hover:text-gray-700">
+            <Link to="/" className="block py-2 px-4 hover:text-gray-700">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-gray-700">
+            <Link to="/about" className="block py-2 px-4 hover:text-gray-700">
               About Us
             </Link>
           </li>
@@ -38,25 +47,26 @@ function Navbar() {
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            <button className="hover:text-gray-700 z-20">
-              Internships
-              <span className="ml-2">▼</span>
+            <button
+              className="block py-2 px-4 hover:text-gray-700 w-full text-left"
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)} // For mobile toggle
+            >
+              Internships <span className="ml-2">▼</span>
             </button>
             {isDropdownOpen && (
-              <ul className="absolute top-full left-0 bg-white text-black shadow-lg mt-1 rounded z-20">
+              <ul className="absolute left-0 top-full bg-white shadow-lg rounded-md mt-1 z-50">
                 <li>
                   <Link
                     to="/course/webdev"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block py-2 px-4 hover:bg-gray-100"
                   >
                     Web Development
                   </Link>
-                   {/* <div onClick={handlenav}>Web Development</div>  */}
                 </li>
                 <li>
                   <Link
                     to="/course/data-science"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block py-2 px-4 hover:bg-gray-100"
                   >
                     Data Science
                   </Link>
@@ -64,7 +74,7 @@ function Navbar() {
                 <li>
                   <Link
                     to="/course/ui-ux"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block py-2 px-4 hover:bg-gray-100"
                   >
                     UI UX
                   </Link>
@@ -72,59 +82,92 @@ function Navbar() {
                 <li>
                   <Link
                     to="/course/machine-learning"
-                    className="block px-4 py-2 hover:bg-gray-100"
+                    className="block py-2 px-4 hover:bg-gray-100"
                   >
                     Machine Learning
                   </Link>
                 </li>
                 <li>
-                  <Link to="/course/java" className="block px-4 py-2  hover:bg-gray-100">
+                  <Link
+                    to="/course/java"
+                    className="block py-2 px-4 hover:bg-gray-100"
+                  >
                     Java
                   </Link>
                 </li>
                 <li>
-                  <Link to="/course/artificial-intelligence" className="block px-4 py-2  hover:bg-gray-100">
+                  <Link
+                    to="/course/artificial-intelligence"
+                    className="block py-2 px-4 hover:bg-gray-100"
+                  >
                     Artificial Intelligence
                   </Link>
                 </li>
                 <li>
-                  <Link to="/course/python" className="block px-4 py-2  hover:bg-gray-100">
+                  <Link
+                    to="/course/python"
+                    className="block py-2 px-4 hover:bg-gray-100"
+                  >
                     Python
                   </Link>
                 </li>
                 <li>
-                  <Link to="/course/cybersecurity" className="block px-4 py-2  hover:bg-gray-100">
+                  <Link
+                    to="/course/cybersecurity"
+                    className="block py-2 px-4 hover:bg-gray-100"
+                  >
                     Cyber Security
                   </Link>
                 </li>
-
               </ul>
             )}
           </li>
           <li>
-            <Link to="/blogs" className="hover:text-gray-700">
+            <Link to="/blogs" className="block py-2 px-4 hover:text-gray-700">
               Blogs
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="hover:text-gray-700">
+            <Link to="/contact" className="block py-2 px-4 hover:text-gray-700">
               Contact
             </Link>
           </li>
+          {/* Login and Signup Buttons */}
+          <div className="flex md:hidden gap-4 p-4">
+            <button
+              onClick={handleNav}
+              className="block py-2 px-4 border rounded-lg text-purple-600 border-purple-600"
+            >
+              Login
+            </button>
+            <button
+              onClick={handleNav1}
+              className="block py-2 px-4 bg-purple-600 text-white rounded-lg"
+            >
+              Signup
+            </button>
+          </div>
         </ul>
-      
-    <div className="flex gap-10">
-    <button onClick={handlenav} className="rounded-lg py-3 px-4 border" style={{ border: '1px solid #674CEF' }}>
-      Login
-    </button>
-     <button  onClick={handlenav1} className=" bg-[#674CEF] rounded-lg  text-white py-3 px-4  border border: 1px solid #674CEF;">
+
+        {/* Desktop Login and Signup Buttons */}
+        <div className="hidden md:flex gap-4">
+          <button
+            onClick={handleNav}
+            className="py-2 px-4 border rounded-lg text-purple-600 border-purple-600"
+          >
+            Login
+          </button>
+          <button
+            onClick={handleNav1}
+            className="py-2 px-4 bg-purple-600 text-white rounded-lg"
+          >
             Signup
-     </button>
-    </div>
+          </button>
+        </div>
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;
 
