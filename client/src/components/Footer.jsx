@@ -64,12 +64,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Our Gallery</h3>
             <div className="grid grid-cols-3 gap-2">
-              <img src="/src/Images/bg1.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="/src/Images/bg2.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="/src/Images/bg3.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="/src/Images/bg4.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="/src/Images/bg5.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
-              <img src="/src/Images/bg6.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/Images/bg1.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/Images/bg2.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/Images/bg3.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/Images/bg4.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/Images/bg5.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
+              <img src="/Images/bg6.png" alt="Gallery 1" className="rounded-md h-16 w-16" />
             </div>
           </div>
         </div>

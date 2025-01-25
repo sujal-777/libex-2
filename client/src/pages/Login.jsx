@@ -33,7 +33,7 @@ const Login = () => {
       <div className="flex w-3/4 bg-white shadow-md rounded-lg overflow-hidden">
         <div className="w-1/2 flex items-center justify-center bg-gradient-to-r from-blue-100 to-purple-100">
           <img
-            src="/src/Images/Login.png"
+            src="/Images/Login.png"
             alt="Illustration"
             className="h-[686px] w-[851px] object-cover"
           />
@@ -79,7 +79,7 @@ const Login = () => {
             className="w-full flex items-center justify-center bg-gray-100 py-2 border border-gray-300 rounded-lg hover:bg-gray-200 transition mb-6"
             onClick={signInWithGoogle}
           >
-            <img src="/src/Images/google.png" alt="Google Icon" className="h-5 w-5 mr-2" />
+            <img src="/Images/google.png" alt="Google Icon" className="h-5 w-5 mr-2" />
             Login with Google
           </button>
           <p className="text-center text-gray-600">
