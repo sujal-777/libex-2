@@ -535,18 +535,23 @@ const CourseDetails = () => {
       </div>
 
       {/* Instructor Section */}
-      <div className="flex justify-center mt-20 gap-6">
-        <div className="flex w-full lg:w-3/4 gap-6 p-6 border border-gray-200 rounded-lg">
+      <div className="flex justify-center mt-20">
+        <div className="flex flex-col sm:flex-row w-full lg:w-3/4 gap-6 p-6 border border-gray-200 rounded-lg">
+          {/* Instructor Image */}
           <img
             src={instructor.img}
             alt="Instructor"
-            className="h-48 w-48 rounded-lg object-cover"
+            className="h-48 w-48 rounded-lg object-cover mx-auto sm:mx-0"
           />
-          <div>
-            <h1 className="text-xl font-bold">{instructor.name}</h1>
+          {/* Instructor Details */}
+          <div className="text-center sm:text-left">
+            <h1 className="text-xl font-bold mt-4 sm:mt-0">
+              {instructor.name}
+            </h1>
             <div className="text-sm text-gray-500 mb-3">{instructor.role}</div>
+            {/* Bio shown beneath the image for mobile */}
             <div className="text-gray-700 mb-3">{instructor.bio}</div>
-            <div className="flex gap-6 text-gray-500">
+            <div className="flex flex-col sm:flex-row gap-4 text-gray-500 justify-center sm:justify-start">
               <div>Experience: {instructor.experience}</div>
               <div>{instructor.students} Students</div>
               <div className="flex items-center gap-1">
@@ -565,6 +570,7 @@ const CourseDetails = () => {
           Our Most Popular <span className="text-cyan-400">Courses</span>
         </div>
         <CourseCards />
+        <br /><br /><br />
       </div>
     </div>
   );
