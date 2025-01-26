@@ -56,7 +56,7 @@
 
 
 import React from "react";
-import expertTeamImage from "../../public/Images/expertTeamImage.png"; 
+import expertTeamImage from "/Images/expertTeamImage.png"; 
 
 const ExpertTeam = () => {
   return (
