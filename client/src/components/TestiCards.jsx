@@ -11,16 +11,17 @@ const val=[
 
 function TestiCards() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-20 px-4">
-      {val.map((testimonial, idx) => (
-        <TestiCard
-          key={idx}
-          name={testimonial.name}
-          proff={testimonial.proff}
-          description={testimonial.description}
-        />
-      ))}
-    </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  mt-20 px-4 justify-items-center">
+          {val.map((testimonial, idx) => (
+            <div key={idx} className="max-w-sm w-full">
+              <TestiCard
+                name={testimonial.name}
+                proff={testimonial.proff}
+                description={testimonial.description}
+              />
+            </div>
+          ))}
+        </div>
   );
 }
 

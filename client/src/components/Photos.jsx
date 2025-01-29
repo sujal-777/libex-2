@@ -33,11 +33,11 @@ function Photos() {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+    <div className="flex justify-center gap-2 ">
       {photoList.map((photo, index) => (
         <div
           key={index}
-          className={`w-full sm:w-1/2 md:w-auto ${
+          className={`w-full sm:w-1/2 sm:h-1/3 md:w-auto ${
             index === 1 || index === 2 ? 'mt-12 md:mt-24' : ''
           }`}
         >
