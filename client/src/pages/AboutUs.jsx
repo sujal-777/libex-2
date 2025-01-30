@@ -67,13 +67,8 @@ const AboutUs = () => {
               <span className="text-cyan-400">Training</span> Tailored For Your
               Success With <span className="text-cyan-400">Libex</span>
             </h3>
-            <p className="mt-4 text-sm md:text-base">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              magni sequi necessitatibus dolore sed, omnis iste quaerat optio
-              exercitationem magnam eos nulla dolor veniam quod in tempora
-              quisquam commodi facere Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Repudiandae, commodi! Lorem ipsum dolor sit
-              amet, consectetur adipisicing elit. Animi, repellendus.
+            <p className="mt-4 text-sm md:text-base text-gray-500">
+            Libex is a premier platform offering world-class training programs tailored to empower individuals with cutting-edge skills. With a focus on career advancement and practical learning, Libex bridges the gap between education and industry demands.
             </p>
             <div className="font-semibold mt-4 space-y-2">
               <div>• Flexible Course Plan</div>
@@ -86,42 +81,37 @@ const AboutUs = () => {
         
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         
         {/* Future Proof Section */}
-        <div className="mt-20 px-4 lg:px-20 w-1/2">
+        <div className="mt-20 px-4 lg:px-20 lg:w-1/2 w-4/5">
           <h2 className="text-2xl font-semibold text-center">
             Future-Proof Your Career With Us
           </h2>
-          <div className="mt-8 text-sm md:text-base space-y-6">
+          <div className="mt-8 text-sm md:text-base space-y-6 text-gray-500">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
-              soluta aspernatur, nulla obcaecati laborum numquam.
+            Our expert-led courses cover a wide array of disciplines, including Web Development, UI/UX Design, Data Science, Artificial Intelligence, and more.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis ipsa alias excepturi eos voluptates quam nihil corrupti
-              quibusdam quae qui, a dolor sunt eaque, provident aperiam assumenda
-              ipsum eligendi magnam?
+            Libex prides itself on its industry-expert instructors, who bring real-world experience to the classroom. They provide mentorship, hands-on projects, and insights that prepare students for competitive job markets. Whether you're a beginner or a professional looking to upgrade your skills, Libex has something for everyone.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              quisquam in soluta debitis molestias maiores a doloremque fuga
-              provident dignissimos?
+            One of the standout features of Libex is its largest student community, fostering collaboration and peer-to-peer learning. Students connect with like-minded individuals, share knowledge, and work on group projects, enhancing both their technical and soft skills.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odio
-              placeat asperiores velit a quasi.
+            Our courses are designed with flexibility in mind, offering self-paced learning, live sessions, and interactive assignments to cater to different learning preferences. Students also benefit from practical exposure through real-world projects and industry-aligned curriculum.
             </p>
           </div>
         </div>
-        <div className="mt-10 flex justify-center items-center h-1/2 w-1/3">
-            <img
-              src="/public/Images/Group-Image-2-About.png"
-              alt="Group Image"
-              className="h-1/2 w-1/3"
+        <div className="mt-10 justify-center items-center h-1/2 w-1/3 hidden md:flex">
+          <img
+            src="/Images/Group-Image-2-About.png"
+            width={300}
+            height={200}
+            alt="Group Image"
           />
         </div>
+
       </div>
       <Counts />
       {/* Training Section */}
