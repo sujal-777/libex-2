@@ -31,10 +31,10 @@ function App() {
         <Route path="/blogs" element={<Blog />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/payment" element={<Payment />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
         <Route path="/success" element={<Success />} />
         <Route path="/cancel" element={<Cancel />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </>

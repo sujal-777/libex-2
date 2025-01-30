@@ -5,6 +5,12 @@ import PropTypes from "prop-types";
 import { Box, Tabs, Tab, Typography } from "@mui/material";
 import { Check } from "lucide-react";
 import CourseCards from "../components/CourseCards";
+import {
+  FaFacebookF,
+  FaXTwitter,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa6";
 
 const CourseDetails = () => {
   const courseDataa = [
@@ -412,11 +418,13 @@ const CourseDetails = () => {
   return (
     <div className="px-4 md:px-10 lg:px-20">
       {/* Header Section */}
-      <div className="bg-gray-300 h-80 flex flex-col justify-center items-center text-center">
-        <div className="bg-white rounded-2xl p-3">
-          <div className="text-orange-400 font-bold">OUR COURSES: {title}</div>
+      <div className="bg-gray-300 h-auto sm:h-80 flex flex-col justify-center items-center text-center p-4">
+        <div className="bg-white rounded-2xl p-3 max-w-xs sm:max-w-md">
+          <div className="text-orange-400 font-bold text-sm sm:text-lg">
+            OUR COURSES: {title}
+          </div>
         </div>
-        <div className="text-2xl font-semibold mt-2">{title}</div>
+        <div className="text-lg sm:text-2xl font-semibold mt-2">{title}</div>
       </div>
 
       {/* Main Section */}
@@ -517,20 +525,78 @@ const CourseDetails = () => {
         </div>
 
         {/* Right Section */}
-        <div className="lg:w-1/4 border border-gray-200 p-5 rounded-lg">
-          <div className="text-center font-bold mb-5">Course Includes:</div>
-          {Object.entries(courseInfo).map(([key, value]) => (
-            <div key={key} className="flex justify-between py-2">
-              <span className="font-semibold capitalize">{key}:</span>
-              <span>{value}</span>
-            </div>
+        <div
+          className="border border-gray-300 rounded-lg h-fit w-full sm:max-w-sm p-4 text-base
+  sm:text-lg sm:p-6 lg:text-xl lg:p-8"
+        >
+          <div className="text-center font-bold mb-4 sm:mb-6">
+            Course Includes:
+          </div>
+          <hr />
+          {[
+            { label: "Level", value: courseInfo.level },
+            { label: "Duration", value: courseInfo.duration },
+            { label: "Lessons", value: courseInfo.lessons },
+            { label: "Students", value: courseInfo.students },
+            { label: "Certifications", value: courseInfo.certifications },
+            { label: "Language", value: courseInfo.language },
+          ].map(({ label, value }) => (
+            <React.Fragment key={label}>
+              <div className="flex justify-between p-3 sm:p-4 lg:p-5">
+                <div>{label}:</div>
+                <div className="text-gray-400">{value}</div>
+              </div>
+              <hr />
+            </React.Fragment>
           ))}
-          <button
-            className="bg-blue-500 text-white w-full py-3 mt-5 rounded-lg"
-            onClick={() => (window.location.href = "/payment")}
-          >
-            Enroll Now - ₹{courseInfo.price.toFixed(2)}
-          </button>
+
+          {/* Pricing & Enroll Button */}
+          <div className="flex flex-col justify-center">
+            <div
+              className="border border-violet-500 text-violet-500 mx-5 p-3 rounded-lg text-center
+      sm:text-lg sm:py-4 lg:text-xl lg:py-5"
+            >
+              This Course Fee ₹{courseInfo.price.toFixed(2)}
+            </div>
+            <button
+              className="bg-violet-500 text-white text-center p-3 mx-3 rounded-lg
+      sm:text-lg sm:py-4 lg:text-xl lg:py-5 mt-3 sm:mt-5 lg:mt-6"
+              onClick={() => (window.location.href = "/payment")}
+            >
+              Join This Course
+            </button>
+          </div>
+
+          {/* Share Section */}
+          <div className="flex items-center gap-4 flex-wrap mt-4 sm:mt-6">
+            <div className="text-base sm:text-lg lg:text-xl">Share:</div>
+            <div className="flex gap-3">
+              <div
+                className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center 
+        border border-violet-500 rounded-full text-violet-500 text-lg sm:text-xl"
+              >
+                <FaFacebookF />
+              </div>
+              <div
+                className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center 
+        border border-violet-500 rounded-full text-violet-500 text-lg sm:text-xl"
+              >
+                <FaXTwitter />
+              </div>
+              <div
+                className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center 
+        border border-violet-500 rounded-full text-violet-500 text-lg sm:text-xl"
+              >
+                <FaLinkedinIn />
+              </div>
+              <div
+                className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center 
+        border border-violet-500 rounded-full text-violet-500 text-lg sm:text-xl"
+              >
+                <FaYoutube />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -558,6 +624,38 @@ const CourseDetails = () => {
                 <Star className="text-yellow-400" /> {instructor.rating} (
                 {instructor.reviews} Reviews)
               </div>
+              <div>
+
+              {/* Share Section */}
+              <div className="flex items-center gap-4 flex-wrap mt-4 sm:mt-6">
+                <div className="flex gap-3">
+                  <div
+                    className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center 
+        border border-violet-500 rounded-full text-violet-500 text-lg sm:text-xl"
+                  >
+                    <FaFacebookF />
+                  </div>
+                  <div
+                    className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center 
+        border border-violet-500 rounded-full text-violet-500 text-lg sm:text-xl"
+                  >
+                    <FaXTwitter />
+                  </div>
+                  <div
+                    className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center 
+        border border-violet-500 rounded-full text-violet-500 text-lg sm:text-xl"
+                  >
+                    <FaLinkedinIn />
+                  </div>
+                  <div
+                    className="h-10 w-10 sm:h-12 sm:w-12 flex items-center justify-center 
+        border border-violet-500 rounded-full text-violet-500 text-lg sm:text-xl"
+                  >
+                    <FaYoutube />
+                  </div>
+                </div>
+              </div>
+              </div>
             </div>
           </div>
         </div>
@@ -570,7 +668,9 @@ const CourseDetails = () => {
           Our Most Popular <span className="text-cyan-400">Courses</span>
         </div>
         <CourseCards />
-        <br /><br /><br />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );
