@@ -5,6 +5,8 @@ import PropTypes from "prop-types";
 import { Box, Tabs, Tab, Typography } from "@mui/material";
 import { Check } from "lucide-react";
 import CourseCards from "../components/CourseCards";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import {
   FaFacebookF,
   FaXTwitter,
@@ -417,6 +419,7 @@ const CourseDetails = () => {
 
   return (
     <div className="px-4 md:px-10 lg:px-20">
+      <Navbar />
       {/* Header Section */}
       <div className="bg-gray-300 h-auto sm:h-80 flex flex-col justify-center items-center text-center p-4">
         <div className="bg-white rounded-2xl p-3 max-w-xs sm:max-w-md">
@@ -672,6 +675,8 @@ const CourseDetails = () => {
         <br />
         <br />
       </div>
+
+      <Footer />
     </div>
   );
 };

@@ -3,10 +3,14 @@ import Counts from "../components/Counts";
 import Weare from "../components/Weare";
 import Testimonials from "../components/Testimonials";
 import ExpertTeam from "../components/ExpertTeam";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 
 const AboutUs = () => {
   return (
     <div className="w-screen">
+      <Navbar />
       {/* Hero Section */}
       <div className="relative bg-gray-300 h-auto flex flex-col justify-center items-center p-6 md:h-80 md:p-0">
         {/* Left Image */}
@@ -150,6 +154,8 @@ const AboutUs = () => {
       <Weare />
       <Testimonials />
       <ExpertTeam />
+
+      <Footer />
     </div>
   );
 };

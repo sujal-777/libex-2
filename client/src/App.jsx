@@ -19,7 +19,6 @@ import Cancel from "./pages/Cancel";
 function App() {
   return (
     <>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/home" element={<Home />} /> */}
@@ -36,7 +35,6 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
       </Routes>
-      <Footer />
     </>
   );
 }

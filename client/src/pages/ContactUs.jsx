@@ -1,9 +1,13 @@
 import React from "react";
 import "./Contactpage.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 
 const ContactPage = () => {
   return (
     <div>
+      <Navbar />
       <div className="bg-gray-300 h-80 flex justify-center items-center flex-col">
         <div className="flex bg-white rounded-2xl p-2">
           <div>HOME : </div> <div className="text-orange-400"> CONTACT US </div>
@@ -81,6 +85,8 @@ const ContactPage = () => {
 
         </section>
       </main>
+
+      <Footer />
     </div>
   );
 };
