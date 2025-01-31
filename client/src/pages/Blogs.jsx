@@ -2,9 +2,14 @@ import React from "react";
 import "./BlogPage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 const BlogPage = () => {
   return (
+    <div>
+<Navbar />
     <div className="blog-page">
+      
       {/* Header Section */}
       <div className="bg-gray-300 h-80 flex justify-center items-center flex-col">
         <div className="flex bg-white rounded-2xl p-2">
@@ -19,18 +24,18 @@ const BlogPage = () => {
         {/* Main Blog Section */}
         <div className="blog-post">
           <img
-            src="/src/Images/image2.png"
+            src="/Images/image2.png"
             alt="Blog Post"
             className="blog-main-image"
           />
           <div className="blog-sub-images">
             <img
-              src="/src/Images/image4.png"
+              src="/Images/image4.png"
               alt="Sub Image 1"
               className="sub-image"
             />
             <img
-              src="/src/images/image3.png"
+              src="/Images/image3.png"
               alt="Sub Image 2"
               className="sub-image"
             />
@@ -63,7 +68,7 @@ const BlogPage = () => {
   <h3>02 Comments</h3>
   <div className="comment">
     <img
-      src="/src/images/image6.png"
+      src="/Images/image6.png"
       alt="Alfonso Culhane"
       className="comment-avatar"
     />
@@ -77,7 +82,7 @@ const BlogPage = () => {
   </div>
   <div className="comment">
     <img
-      src="/src/Images/image5.png"
+      src="/Images/image5.png"
       alt="Allison Curtis"
       className="comment-avatar"
     />
@@ -111,7 +116,7 @@ const BlogPage = () => {
   <div className="latest-posts">
     <ul>
       
-        <img src="/src/Images/image7.png" alt="Latest Post" />
+        <img src="/Images/image7.png" alt="Latest Post" />
         {/* <div>
           <p>By Admin</p>
           <h4>Top 5 UI Design Tips</h4>
@@ -154,8 +159,9 @@ const BlogPage = () => {
 </div>
 
 </aside>
-
+<Footer />
       </div>
+    </div>
   );
 };
 
