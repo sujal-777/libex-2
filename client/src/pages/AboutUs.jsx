@@ -16,7 +16,7 @@ const AboutUs = () => {
         {/* Left Image */}
         <img
           // src="/Images/Background/Mask-Group.png"
-          src="public/Images/Mask-Group.png"
+          src="/Images/Mask-Group.png"
           alt="Left Prop"
           className="hidden md:block absolute left-4 top-1/2 transform -translate-y-1/2 h-24 w-32 lg:h-50 lg:w-60"
         />
@@ -30,19 +30,19 @@ const AboutUs = () => {
         {/* Right Image */}
         <img
           // src="public/Images/Background/Overlay-About.png"
-          src="/public/Images/Overlay-About.png"
+          src="/Images/Overlay-About.png"
           alt="Right Prop"
           className="absolute right-0 bottom-0 h-32 md:h-60"
         />
 
         {/* Decorative Lines */}
         <img
-          src="/public/Images/line-About-1.png"
+          src="/Images/line-About-1.png"
           alt="Left Line"
           className="hidden md:block absolute left-10 top-1/3 transform -translate-y-1/2"
         />
         <img
-          src="/public/Images/line-About-2.png"
+          src="/Images/line-About-2.png"
           alt="Right Line"
           className="hidden md:block absolute right-10 top-2/3 transform -translate-y-1/2"
         />
@@ -55,7 +55,7 @@ const AboutUs = () => {
           <div className="flex justify-center lg:w-1/2">
             <img
               className="rounded-full h-32 w-32 md:h-48 md:w-48 lg:h-auto lg:w-auto"
-              src="/public/Images/Group-Image-About.png"
+              src="/Images/Group-Image-About.png"
               alt="About Us Image"
             />
           </div>

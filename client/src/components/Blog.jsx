@@ -76,12 +76,12 @@
 
 
 import React from "react";
-import blogImage from "../../public/Images/Blogsection.png"; // Replace with the correct path to your image
+ // Replace with the correct path to your image
 
 const Blog = () => {
   return (
     <div className="blog">
-      <img src={blogImage} alt="Blog Section" />
+      <img src = "/Images/Blogsection.png" alt="Blog Section" />
     </div>
   );
 };
