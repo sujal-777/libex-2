@@ -70,7 +70,7 @@ function Weare() {
       </div>
       <hr className="mb-4" />
       <div className="w-full">
-        <div className="flex m-4 md:flex-row flex-col">
+        <div className="flex m-4 md:flex-row flex-col ">
           <div className="bg-orange-100 rounded-full h-16 p-3 w-20 flex items-center justify-center">
             <img src="/l1.png" alt="" />
           </div>
@@ -88,7 +88,7 @@ function Weare() {
           <div className="bg-cyan-100 rounded-full h-16 p-3 w-20 flex items-center justify-center">
             <img src="/l2.png" alt="" />
           </div>
-          
+
           <div className="ml-4 text-start">
             <div className="font-semibold">Up-to-Date Course Content</div>
             <div className="text-gray-400">

@@ -2,10 +2,10 @@ import React from 'react';
 import Count from './Count';
 
 const val = [
-  { bclr: 'bg-blue-100', clr: 'bg-blue-500', logo: '👩‍💻', cnt: '1000', data: 'Satisfied Students' },
-  { bclr: 'bg-green-100', clr: 'bg-green-500', logo: '📚', cnt: '100', data: 'Class Completed' },
-  { bclr: 'bg-yellow-100', clr: 'bg-yellow-500', logo: '🏫', cnt: '50', data: 'Active Students' },
-  { bclr: 'bg-pink-100', clr: 'bg-pink-500', logo: '👨‍🏫', cnt: '10', data: 'Expert Instructors' },
+  { bclr: 'bg-blue-100', clr: 'bg-blue-500', logo: '/public/Images/c1.png', cnt: '1000', data: 'Satisfied Students' },
+  { bclr: 'bg-green-100', clr: 'bg-green-500', logo: '/public/Images/c2.png', cnt: '100', data: 'Class Completed' },
+  { bclr: 'bg-yellow-100', clr: 'bg-yellow-500', logo: '/public/Images/c3.png', cnt: '50', data: 'Active Students' },
+  { bclr: 'bg-pink-100', clr: 'bg-pink-500', logo: '/public/Images/c4.png', cnt: '10', data: 'Expert Instructors' },
 ];
 
 function Counts() {
