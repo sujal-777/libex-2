@@ -88,11 +88,7 @@ function Weare() {
           <div className="bg-cyan-100 rounded-full h-16 p-3 w-20 flex items-center justify-center">
             <img src="/l2.png" alt="" />
           </div>
-          <img
-            src="/Images/Mask-Group.png"
-            alt="Left Prop"
-            className="absolute left-44 transform -translate-y-1/2 h-80 w-96 z-0"
-          />
+          
           <div className="ml-4 text-start">
             <div className="font-semibold">Up-to-Date Course Content</div>
             <div className="text-gray-400">
