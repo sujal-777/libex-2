@@ -77,52 +77,52 @@ function CourseCards() {
   };
 
   return (
-    <div className="relative flex flex-col items-center pt-16 w-full">
-      {/* Desktop View - Grid Layout */}
-      {!isMobile ? (
-        <div className="grid grid-cols-2 gap-8 w-full">
-          {val.map((course, index) => (
-            <CourseCard
-              key={index}
-              weeks={course.weeks}
-              CName={course.Cname}
-              lessons={course.lessons}
-              students={course.students}
-              src={course.src}
-              isMobile={false}
-            />
-          ))}
-        </div>
-      ) : (
-        /* Mobile View - Single Course with Navigation Arrows */
-        <div className="relative w-full flex flex-col items-center">
-          <CourseCard
-            weeks={val[currentIndex].weeks}
-            CName={val[currentIndex].Cname}
-            lessons={val[currentIndex].lessons}
-            students={val[currentIndex].students}
-            src={val[currentIndex].src}
-            isMobile={true}
-          />
-
-          {/* Navigation Arrows */}
-          <div className="flex gap-6 mt-4">
-            <button
-              onClick={handlePrev}
-              className="w-10 h-10 flex items-center justify-center bg-gray-700 text-white rounded-full shadow-md"
-            >
-              ◀
-            </button>
-            <button
-              onClick={handleNext}
-              className="w-10 h-10 flex items-center justify-center bg-gray-700 text-white rounded-full shadow-md"
-            >
-              ▶
-            </button>
-          </div>
-        </div>
-      )}
+    <div className="relative flex flex-col items-center pt-16 w-5/6 mx-auto">
+  {/* Desktop View - Grid Layout */}
+  {!isMobile ? (
+    <div className="grid grid-cols-2 gap-8 w-full">
+      {val.map((course, index) => (
+        <CourseCard
+          key={index}
+          weeks={course.weeks}
+          CName={course.Cname}
+          lessons={course.lessons}
+          students={course.students}
+          src={course.src}
+          isMobile={false}
+        />
+      ))}
     </div>
+  ) : (
+    /* Mobile View - Single Course with Navigation Arrows */
+    <div className="relative w-full flex flex-col items-center">
+      <CourseCard
+        weeks={val[currentIndex].weeks}
+        CName={val[currentIndex].Cname}
+        lessons={val[currentIndex].lessons}
+        students={val[currentIndex].students}
+        src={val[currentIndex].src}
+        isMobile={true}
+      />
+
+      {/* Navigation Arrows */}
+      <div className="flex gap-6 mt-4">
+        <button
+          onClick={handlePrev}
+          className="w-10 h-10 flex items-center justify-center bg-gray-700 text-white rounded-full shadow-md"
+        >
+          ◀
+        </button>
+        <button
+          onClick={handleNext}
+          className="w-10 h-10 flex items-center justify-center bg-gray-700 text-white rounded-full shadow-md"
+        >
+          ▶
+        </button>
+      </div>
+    </div>
+  )}
+</div>
   );
 }
 

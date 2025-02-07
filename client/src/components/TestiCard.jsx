@@ -2,7 +2,7 @@ import React from 'react'
 
 function TestiCard({name,proff,description}) {
   return (
-    <div className='bg-white text-left  w-72 rounded-xl'>
+    <div className='bg-white text-left  w-72 rounded-xl p-10'>
         <div className='flex justify-between'>
         <div className="text-pink-600 text-9xl font-bold">
         &#8220; 
