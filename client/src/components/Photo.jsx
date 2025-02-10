@@ -4,7 +4,7 @@ function Photo({ prop, alt }) {
   return (
     <div className="flex justify-center items-center">
       <img
-        className="h-32 w-44 md:h-50 md:w-40 lg:h-96 lg:w-60 rounded-full"
+        className="h-32 w-32 md:h-36 md:w-48 lg:h-80 lg:w-64 rounded-full object-cover max-h-full max-w-full"
         src={prop}
         alt={alt}
       />
