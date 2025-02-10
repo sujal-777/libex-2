@@ -215,13 +215,13 @@ const CourseDetails = () => {
         reviews: 36,
       },
 
-      // requirements: [
-      //   "Basic Programming Skills",
-      //   "Mathematical Knowledge",
-      //   "Analytical Thinking",
-      //   "Access to Tools"
-      // ],
-      // description: "Artificial Intelligence (AI) is a transformative field of computer science that enables machines to simulate human intelligence. This course provides an in-depth understanding of core AI concepts, including machine learning, natural language processing, computer vision, and robotics. Students will explore algorithms, data-driven decision-making, and ethical considerations in AI development. Through hands-on projects and real-world applications, learners will gain practical skills to design and implement intelligent systems."
+      requirements: [
+        "Basic Programming Skills",
+        "Mathematical Knowledge",
+        "Analytical Thinking",
+        "Access to Tools"
+      ],
+      description: "Artificial Intelligence (AI) is a transformative field of computer science that enables machines to simulate human intelligence. This course provides an in-depth understanding of core AI concepts, including machine learning, natural language processing, computer vision, and robotics. Students will explore algorithms, data-driven decision-making, and ethical considerations in AI development. Through hands-on projects and real-world applications, learners will gain practical skills to design and implement intelligent systems."
     },
     {
       id: "java",
@@ -347,6 +347,7 @@ const CourseDetails = () => {
     },
   ];
 
+
   const reviews = [
     {
       src: "https://images.unsplash.com/photo-1734335225921-06e1b6d94ed0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D",
@@ -388,6 +389,7 @@ const CourseDetails = () => {
     },
   ];
 
+
   const { courseid } = useParams();
   const courseData = courseDataa.find((course) => course.id === courseid);
 
@@ -418,9 +420,8 @@ const CourseDetails = () => {
   };
 
   return (
-    <div className="px-4 md:px-10 lg:px-20">
+    <div>
       <Navbar />
-      {/* Header Section */}
       <div className="bg-gray-300 h-auto sm:h-80 flex flex-col justify-center items-center text-center p-4">
         <div className="bg-white rounded-2xl p-3 max-w-xs sm:max-w-md">
           <div className="text-orange-400 font-bold text-sm sm:text-lg">
@@ -429,6 +430,9 @@ const CourseDetails = () => {
         </div>
         <div className="text-lg sm:text-2xl font-semibold mt-2">{title}</div>
       </div>
+
+    <div className="px-4 md:px-10 lg:px-20">
+      {/* Header Section */}
 
       {/* Main Section */}
       <div className="flex flex-col lg:flex-row justify-between mt-10 gap-8">
@@ -676,6 +680,7 @@ const CourseDetails = () => {
         <br />
       </div>
 
+    </div>
       <Footer />
     </div>
   );

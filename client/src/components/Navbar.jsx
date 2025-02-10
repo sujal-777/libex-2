@@ -1,44 +1,31 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./Navbar.css";
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false); // For mobile menu toggle
+  const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleNav = () => navigate("/login");
   const handleNav1 = () => navigate("/signup");
 
   return (
-    <nav className="bg-white px-4 py-3 shadow-md sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-white px-6 md:px-10 py-2 shadow-md sticky top-0 z-50">
+      <div className="container mx-auto flex justify-between items-center h-14">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-purple-600">
           Logo
         </Link>
 
-        {/* Menu Icon for Mobile */}
-        <button
-          className="menu-icon md:hidden text-2xl focus:outline-none"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? "✖" : "☰"}
-        </button>
-
         {/* Navigation Links */}
-        <ul
-          className={`md:flex md:space-x-6 md:items-center absolute md:static top-[70px] left-0 w-full bg-white md:bg-transparent shadow-md md:shadow-none transition-all duration-300 ${
-            menuOpen ? "block" : "hidden"
-          }`}
-        >
+        <ul className="hidden md:flex md:items-center md:space-x-10 text-lg font-semibold">
           <li>
-            <Link to="/" className="block py-2 px-4 hover:text-gray-700">
+            <Link to="/" className="hover:text-gray-700">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className="block py-2 px-4 hover:text-gray-700">
+            <Link to="/about" className="hover:text-gray-700">
               About Us
             </Link>
           </li>
@@ -47,129 +34,145 @@ function Navbar() {
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
           >
-            <button
-              className="block py-2 px-4 hover:text-gray-700 w-full text-left"
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)} // For mobile toggle
-            >
+            <button className="hover:text-gray-700">
               Internships <span className="ml-2">▼</span>
             </button>
             {isDropdownOpen && (
               <ul className="absolute left-0 top-full bg-white shadow-lg rounded-md mt-1 z-50">
-                <li>
-                  <Link
-                    to="/course/webdev"
-                    className="block py-2 px-4 hover:bg-gray-100"
-                  >
-                    Web Development
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/course/data-science"
-                    className="block py-2 px-4 hover:bg-gray-100"
-                  >
-                    Data Science
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/course/ui-ux"
-                    className="block py-2 px-4 hover:bg-gray-100"
-                  >
-                    UI UX
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/course/machine-learning"
-                    className="block py-2 px-4 hover:bg-gray-100"
-                  >
-                    Machine Learning
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/course/java"
-                    className="block py-2 px-4 hover:bg-gray-100"
-                  >
-                    Java
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/course/artificial-intelligence"
-                    className="block py-2 px-4 hover:bg-gray-100"
-                  >
-                    Artificial Intelligence
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/course/python"
-                    className="block py-2 px-4 hover:bg-gray-100"
-                  >
-                    Python
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/course/cybersecurity"
-                    className="block py-2 px-4 hover:bg-gray-100"
-                  >
-                    Cyber Security
-                  </Link>
-                </li>
+                {[
+                  { name: "Web Development", path: "/course/webdev" },
+                  { name: "Data Science", path: "/course/data-science" },
+                  { name: "UI UX", path: "/course/ui-ux" },
+                  { name: "Machine Learning", path: "/course/machine-learning" },
+                  { name: "Java", path: "/course/java" },
+                  { name: "Artificial Intelligence", path: "/course/artificial-intelligence" },
+                  { name: "Python", path: "/course/python" },
+                  { name: "Cyber Security", path: "/course/cybersecurity" },
+                ].map((item) => (
+                  <li key={item.path}>
+                    <Link to={item.path} className="block py-2 px-4 hover:bg-gray-100">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             )}
           </li>
           <li>
-            <Link to="/blogs" className="block py-2 px-4 hover:text-gray-700">
+            <Link to="/blogs" className="hover:text-gray-700">
               Blogs
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="block py-2 px-4 hover:text-gray-700">
+            <Link to="/contact" className="hover:text-gray-700">
               Contact
             </Link>
           </li>
-          {/* Login and Signup Buttons */}
-          <div className="flex md:hidden gap-4 p-4">
-            <button
-              onClick={handleNav}
-              className="block py-2 px-4 border rounded-lg text-purple-600 border-purple-600"
-            >
-              Login
-            </button>
-            <button
-              onClick={handleNav1}
-              className="block py-2 px-4 bg-purple-600 text-white rounded-lg"
-            >
-              Signup
-            </button>
-          </div>
         </ul>
 
-        {/* Desktop Login and Signup Buttons */}
-        <div className="hidden md:flex gap-4">
+        {/* Desktop Login & Signup Buttons (Size Increased) */}
+        <div className="hidden md:flex gap-3">
           <button
             onClick={handleNav}
-            className="py-2 px-4 border rounded-lg text-purple-600 border-purple-600"
+            className="py-2.5 px-5 border rounded-md text-purple-600 border-purple-600 text-base"
           >
             Login
           </button>
           <button
             onClick={handleNav1}
-            className="py-2 px-4 bg-purple-600 text-white rounded-lg"
+            className="py-2.5 px-5 bg-purple-600 text-white rounded-md text-base"
           >
             Signup
           </button>
         </div>
+
+        {/* Mobile Menu Icon */}
+        <button
+          className="md:hidden text-2xl focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? "✖" : "☰"}
+        </button>
+
+        {/* Mobile Menu */}
+        <ul
+          className={`md:hidden absolute top-14 left-0 w-full bg-white shadow-md transition-all duration-300 ${
+            menuOpen ? "block" : "hidden"
+          }`}
+        >
+          <li>
+            <Link to="/" className="block py-2 px-6 hover:text-gray-700">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="block py-2 px-6 hover:text-gray-700">
+              About Us
+            </Link>
+          </li>
+          <li>
+            <button
+              className="block py-2 px-6 hover:text-gray-700 w-full text-left"
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            >
+              Internships <span className="ml-2">▼</span>
+            </button>
+            {isDropdownOpen && (
+              <ul className="bg-white shadow-lg rounded-md mt-1 z-50">
+                {[
+                  { name: "Web Development", path: "/course/webdev" },
+                  { name: "Data Science", path: "/course/data-science" },
+                  { name: "UI UX", path: "/course/ui-ux" },
+                  { name: "Machine Learning", path: "/course/machine-learning" },
+                  { name: "Java", path: "/course/java" },
+                  { name: "Artificial Intelligence", path: "/course/artificial-intelligence" },
+                  { name: "Python", path: "/course/python" },
+                  { name: "Cyber Security", path: "/course/cybersecurity" },
+                ].map((item) => (
+                  <li key={item.path}>
+                    <Link to={item.path} className="block py-2 px-4 hover:bg-gray-100">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+          <li>
+            <Link to="/blogs" className="block py-2 px-6 hover:text-gray-700">
+              Blogs
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="block py-2 px-6 hover:text-gray-700">
+              Contact
+            </Link>
+          </li>
+
+          {/* Mobile Login & Signup */}
+          <div className="flex gap-4 p-4">
+            <button
+              onClick={handleNav}
+              className="block py-3 px-6 border rounded-lg text-purple-600 border-purple-600 text-base"
+            >
+              Login
+            </button>
+            <button
+              onClick={handleNav1}
+              className="block py-3 px-6 bg-purple-600 text-white rounded-lg text-base"
+            >
+              Signup
+            </button>
+          </div>
+        </ul>
       </div>
     </nav>
   );
 }
 
 export default Navbar;
+
+
 
 //Updated Navbar - Made for automate routing and signout purpose {included login functionality} 
 
