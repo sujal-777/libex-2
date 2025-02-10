@@ -18,5 +18,5 @@ function TestiCard({name,proff,description}) {
     </div>
   )
 }
-
+g
 export default TestiCard
