@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from './Card';
-// import Modal as 
-// import BasicModal from './Modal';
 
 const cardData = [
   { name: 'Web Development', clr: 'bg-cyan-500' ,bclr:'bg-cyan-200', im:'/Images/b1.png'},
@@ -16,8 +14,8 @@ const cardData = [
 
 function Cards() {
   return (
-    <div className="flex justify-center">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full md:w-3/4 p-4 mt-20">
+    <div className="flex justify-center w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full md:w-3/4 p-4 mt-20 place-items-center">
         {cardData.map((card, idx) => (
           <Card key={idx} name={card.name} clr={card.clr} bclr={card.bclr} im={card.im}/>
         ))}
@@ -27,22 +25,3 @@ function Cards() {
 }
 
 export default Cards;
-
-
-// function Cards() {
-  
-//   // const [data,setdata]=useState(cardData);
-//   // const addData = () => {
-//   //   setdata([...data, { name: 'New Course', clr: 'bg-purple-500',bclr:'bg-purple-200' }]);
-//   // }
-
-//   return (
-//     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
-//       {cardData .map((card, idx) => (
-//         <Card key={idx} name={card.name} clr={card.clr} bclr={card.bclr} />
-//       ))}
-//       {/* <button onClick={addData}>Add new</button> */}
-//       {/* <BasicModal setdata={setdata} data={data} /> */}
-//     </div>
-//   );
-// }
